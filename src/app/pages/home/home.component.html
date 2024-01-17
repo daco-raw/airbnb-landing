@@ -1,0 +1,19 @@
+<app-navbar/>
+
+<img src="/assets/banner.png" alt=""  class="mx-auto"/>
+
+@defer () {
+
+
+  <div class="w-full flex justify-center flex-wrap gap-2">
+    <app-cards [value]="infoCard[0].title" ></app-cards>
+    <app-cards [value]="infoCard[1].title" ></app-cards>
+    <app-cards [value]="infoCard[2].title" ></app-cards>
+    <app-cards [value]="infoCard[3].title" ></app-cards>
+    <app-cards [value]="infoCard[4].title" ></app-cards>
+    <app-cards [value]="infoCard[5].title" ></app-cards>
+  </div>
+
+}
+
+<app-footer/>
