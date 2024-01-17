@@ -14,3 +14,5 @@ export class HotelsService {
     return this.http.get<HotelsResults>('http://localhost:3000/0');
   }
 }
+
+//TODO: consumirr api restted not found
