@@ -38,8 +38,10 @@ testem.log
 /typings
 
 .env
-.db.json
+db.json
+http.rest
 
 # System files
 .DS_Store
 Thumbs.db
+

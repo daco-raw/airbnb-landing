@@ -1,18 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../../environments/environment';
 
-import { HotelsResults } from '../../interfaces/hotels';
-
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({ providedIn: 'root' })
 export class HotelsService {
-  constructor(private http: HttpClient) {}
+  private endPoint: string = `${environment.apiHotels}`;
+  private hotels$: Observable<any>;
 
-  getHotel(): Observable<HotelsResults> {
-    return this.http.get<HotelsResults>('http://localhost:3000/0');
+  constructor(private http: HttpClient) {
+    this.hotels$ = this.getAllHotels();
+  }
+
+  public getAllHotels(): Observable<any> {
+    return this.http.get<any>(this.endPoint);
   }
 }
-
-//TODO: consumirr api restted not found

@@ -1,9 +1,7 @@
-<div class="relative flex w-full max-w-[25rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg ">
+<div class="flex w-full max-w-[25rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg ">
   <div
-    class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 hover:cursor-pointer">
-    <img
-      src={{url_img}}
-      alt="ui/ux review check" />
+    class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg hover:scale-105 transition duration-200 delay-100 rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 hover:cursor-pointer">
+    <img src={{img}} alt="ui/ux review check" />
     <div
       class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60">
     </div>
@@ -21,8 +19,9 @@
   </div>
   <div class="p-6">
     <div class="flex items-center justify-between mb-3">
-      <h5 class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900 hover:cursor-pointer">
-        {{value}}
+      <h5
+        class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900 hover:cursor-pointer">
+        {{title}}
       </h5>
       <p
         class="flex items-center gap-1.5 font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
@@ -36,8 +35,7 @@
       </p>
     </div>
     <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-      Enter a freshly updated and thoughtfully furnished peaceful home
-      surrounded by ancient trees, stone walls, and open meadows.
+      {{description}}
     </p>
     <div class="inline-flex flex-wrap items-center gap-3 mt-8 group">
       <span
@@ -95,7 +93,7 @@
     </div>
   </div>
   <div class="pl-3 pb-3">
-    <h4 class="font-sans text-md bold text-black">${{price}} night</h4>
+    <h4 class="font-sans text-md bold text-black"><b>{{price}}</b> night</h4>
   </div>
   <!-- <div class="p-6 pt-3">
     <button
