@@ -1,8 +1,8 @@
 <nav class="flex items-center justify-between sticky top-0 z-50 shadow-md bg-white p-5 md:px-10">
-  <div class="flex-1 h-10 my-auto">
-    <img class="h-full w-full object-contain object-left" src="/assets/logo.png" />
+  <div class="flex-1 h-10 my-auto ">
+    <img class="h-full w-full object-contain object-left hover:cursor-pointer" (click)="goToHome()"
+      src="/assets/logo.png" />
   </div>
-
   <div class="flex-1 flex md:border-2 md:rounded-full md:shadow-sm py-2">
     <input class="flex-grow text-gray-600 placeholder:text-gray-400 outline-none pl-5 bg-transparent" type="text"
       placeholder="Start your search" />

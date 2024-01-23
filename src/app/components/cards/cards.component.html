@@ -1,5 +1,5 @@
 <div class="flex w-full max-w-[25rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg ">
-  <div
+  <div (click)="goToDetails()"
     class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg hover:scale-105 transition duration-200 delay-100 rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 hover:cursor-pointer">
     <img src={{img}} alt="ui/ux review check" />
     <div
@@ -19,7 +19,7 @@
   </div>
   <div class="p-6">
     <div class="flex items-center justify-between mb-3">
-      <h5
+      <h5 (click)="goToDetails()"
         class="block font-sans text-xl antialiased font-medium leading-snug tracking-normal text-blue-gray-900 hover:cursor-pointer">
         {{title}}
       </h5>

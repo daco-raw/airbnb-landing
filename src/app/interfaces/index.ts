@@ -7,6 +7,7 @@ export interface HotelsResults {
 }
 
 export interface Environments {
+  apiHotelsMocha: string;
   apiHotels: string;
   apiHotelsDev?: string;
 }

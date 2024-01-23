@@ -5,7 +5,7 @@ import { environment } from '../../../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class HotelsService {
-  private endPoint: string = `${environment.apiHotels}`;
+  private endPoint: string = environment.apiHotelsMocha;
   private hotels$: Observable<any>;
 
   constructor(private http: HttpClient) {

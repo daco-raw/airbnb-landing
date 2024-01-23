@@ -5,7 +5,7 @@
 <div class="w-full flex flex-row justify-center flex-wrap gap-2 pb-10">
   @for (hotel of data; track hotel.id) {
   <app-cards [img]="hotel.url_img" [title]="hotel.hotel_name" [description]="hotel.description" [price]="hotel.price" />
-  }
+  }@empty {<app-loading /> }
 </div>
 
 } @placeholder { <p>.</p> }
