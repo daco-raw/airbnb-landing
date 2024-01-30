@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './404.component.html',
 })
-export class NotFoundComponent {}
+export class NotFoundComponent {
+  constructor() {}
+}

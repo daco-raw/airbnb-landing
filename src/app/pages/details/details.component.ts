@@ -8,6 +8,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
   imports: [NavbarComponent, FooterComponent],
   templateUrl: './details.component.html',
 })
-export class DetailsComponent {}
-
-
+export class DetailsComponent {
+  constructor() {}
+}

@@ -14,10 +14,9 @@ export class CardsComponent {
   @Input() score: number = Math.floor(Math.random() * (9 - 0 + 1) + 0);
   @Input() price: string = ''; //Math.floor(Math.random() * (1000 - 40 + 1)) + 40;
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   goToDetails(): void {
-    this.router.navigate(['/details']);
+    this.router.navigate([`/details/${this.title}`]);
   }
 }

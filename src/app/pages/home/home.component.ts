@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
   showData(): void {
     this.apiService.getAllHotels().subscribe((data) => {
       this.data = data;
-      console.log(this.data);
     });
   }
 }
